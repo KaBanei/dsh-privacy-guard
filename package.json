@@ -1,0 +1,53 @@
+{
+  "name": "dsh-privacy-guard",
+  "version": "0.1.0",
+  "description": "隐私守卫：AI 读写个人隐私数据前强制本机身份认证与授权，敏感信息只在本机加密保存。",
+  "type": "module",
+  "main": "./src/index.mjs",
+  "exports": {
+    ".": "./src/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "assets",
+    "cordis.patch.yml",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node test/selftest.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "os": [
+    "win32"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "privacy",
+    "security",
+    "windows",
+    "password"
+  ],
+  "license": "MIT",
+  "author": "dsh-privacy-guard contributors",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaBanei/dsh-privacy-guard.git"
+  },
+  "homepage": "https://github.com/KaBanei/dsh-privacy-guard",
+  "bugs": {
+    "url": "https://github.com/KaBanei/dsh-privacy-guard/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

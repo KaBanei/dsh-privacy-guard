@@ -1,0 +1,6 @@
+# dsh-privacy-guard bundle patch：把主机端插件行插入 profile。
+# 安装：dsh plugin --profile desktop add <本目录|tarball>
+# 或：plugin_manager install_bundle（DSH 图形界面）
+- insert:
+    - id: dsh-privacy-guard
+      name: 'dsh-privacy-guard'
